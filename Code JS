@@ -1,0 +1,122 @@
+// Éléments DOM
+const menuToggle = document.getElementById('menuToggle');
+const sidebar = document.getElementById('sidebar');
+const overlay = document.getElementById('overlay');
+const closeBtn = document.getElementById('closeBtn');
+const menuLinks = document.querySelectorAll('.menu-link');
+const sections = document.querySelectorAll('.section');
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+// Ouvrir le menu
+menuToggle.addEventListener('click', () => {
+    sidebar.classList.add('active');
+    overlay.classList.add('active');
+});
+
+// Fermer le menu
+function closeMenu() {
+    sidebar.classList.remove('active');
+    overlay.classList.remove('active');
+}
+closeBtn.addEventListener('click', closeMenu);
+overlay.addEventListener('click', closeMenu);
+
+// Navigation entre sections
+menuLinks.forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+
+        // Retirer active de tous les liens
+        menuLinks.forEach(l => l.classList.remove('active'));
+
+        // Ajouter active au lien cliqué
+        link.classList.add('active');
+
+        // Section cible
+        const targetId = link.getAttribute('href').substring(1);
+
+        // Masquer toutes les sections
+        sections.forEach(section => section.classList.remove('active-section'));
+
+        // Afficher la section cible
+        const targetSection = document.getElementById(targetId);
+        if(targetSection) {
+            targetSection.classList.add('active-section');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Fermer le menu sur mobile
+        closeMenu();
+    });
+});
+
+// FAQ interactive
+faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        answer.classList.toggle('show');
+
+        // Rotation icône
+        const icon = question.querySelector('i');
+        icon.classList.toggle('fa-rotate-180');
+    });
+});
+
+// Optionnel : Recherche simple (tu peux compléter searchableContent)
+const searchInput = document.getElementById('searchInput');
+const searchResults = document.getElementById('searchResults');
+
+const searchableContent = [
+    {
+        title: "Qui je suis",
+        section: "qui-je-suis",
+        content: "Présentation personnelle, valeurs, passions, motivations."
+    },
+    {
+        title: "Formation & Projet",
+        section: "formation-projet",
+        content: "Bac général 2024, ILEPS 2024, expériences pédagogiques."
+    },
+    {
+        title: "Vie de danseur",
+        section: "vie-danseur",
+        content: "Danse depuis l'enfance, hip-hop, jazz, contemporain, performances."
+    },
+    {
+        title: "Action citoyenne",
+        section: "action-citoyenne",
+        content: "Bénévolat, scoutisme, ILEPS Awards, Campus Day, Special Olympics."
+    }
+];
+
+searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase();
+    searchResults.innerHTML = '';
+
+    if(query === '') {
+        searchResults.style.display = 'none';
+        return;
+    }
+
+    const results = searchableContent.filter(item => 
+        item.title.toLowerCase().includes(query) || 
+        item.content.toLowerCase().includes(query)
+    );
+
+    if(results.length === 0) {
+        searchResults.innerHTML = '<p>Aucun résultat trouvé</p>';
+    } else {
+        results.forEach(item => {
+            const div = document.createElement('div');
+            div.classList.add('search-result-item');
+            div.innerHTML = `<h4>${item.title}</h4><p>${item.content}</p>`;
+            div.addEventListener('click', () => {
+                document.querySelector(`#${item.section}`).classList.add('active-section');
+                window.scrollTo({top: 0, behavior: 'smooth'});
+                searchResults.style.display = 'none';
+            });
+            searchResults.appendChild(div);
+        });
+    }
+    searchResults.style.display = 'block';
+});
