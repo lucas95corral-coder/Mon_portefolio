@@ -1,271 +1,310 @@
-<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Lucas Corral</title>
+
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-<!-- Bouton menu hamburger -->
-<button class="menu-toggle" id="menuToggle">
-    <i class="fas fa-bars"></i>
-</button>
+    <!-- Bouton menu hamburger -->
+    <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
 
-<!-- Menu latéral gauche -->
-<nav class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-        <h2>Menu</h2>
-        <button class="close-btn" id="closeBtn">
-            <i class="fas fa-times"></i>
-        </button>
-    </div>
-    <ul class="menu-items">
-        <li><a href="#accueil" class="menu-link active"><i class="fas fa-home"></i> Accueil</a></li>
-        <li><a href="#qui-je-suis" class="menu-link"><i class="fas fa-user"></i> Qui je suis ?</a></li>
-        <li><a href="#formation-pro" class="menu-link"><i class="fas fa-graduation-cap"></i> Formation & Projet</a></li>
-        <li><a href="#action-citoyenne" class="menu-link"><i class="fas fa-users"></i> Action citoyenne</a></li>
-        <li><a href="#vie-danseur" class="menu-link"><i class="fas fa-music"></i> Ma vie de danseur</a></li>
-        <li><a href="#faq" class="menu-link"><i class="fas fa-question-circle"></i> FAQ</a></li>
-    </ul>
-</nav>
-
-<!-- Overlay -->
-<div class="overlay" id="overlay"></div>
-
-<!-- Contenu principal -->
-<main class="main-content" id="mainContent">
-
-    <!-- Section Accueil -->
-<section id="accueil" class="section active-section">
-
-    <div class="hero-section">
-
-        <div class="hero-content">
-            <h1 class="hero-title">Bienvenue sur mon Portfolio</h1>
-            <p class="hero-subtitle">Enseignant | Danseur | Passionné</p>
-
-            <!-- Boutons cliquables -->
-            <div class="hero-buttons" style="margin-top: 20px;">
-                <a href="#formation-projet" class="cta-button">Découvrir mon parcours</a>
-                <a href="#faq" class="cta-button" style="margin-left: 15px;">Me contacter</a>
-            </div>
+    <!-- Menu latéral gauche -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
         </div>
 
-        <!-- Petit texte au-dessus des photos -->
-        <p style="text-align:center; font-size:18px; margin-bottom:15px;">
-            Futur enseignant, je fais bouger les jeunes avec passion et joie
-        </p>
+        <ul class="menu-items">
+            <li><a href="#accueil" class="menu-link active"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="#qui-je-suis" class="menu-link"><i class="fas fa-user"></i> Qui je suis ?</a></li>
+            <li><a href="#formation-pro" class="menu-link"><i class="fas fa-graduation-cap"></i> Formation & Projet</a></li>
+            <li><a href="#action-citoyenne" class="menu-link"><i class="fas fa-users"></i> Action citoyenne</a></li>
+            <li><a href="#vie-danseur" class="menu-link"><i class="fas fa-music"></i> Ma vie de danseur</a></li>
+            <li><a href="#faq" class="menu-link"><i class="fas fa-question-circle"></i> FAQ</a></li>
+        </ul>
+    </nav>
 
-        <!-- Galerie photos -->
-        <div class="photo-gallery">
-            <div class="photo-item">
-                <img src="https://via.placeholder.com/300x400/6366f1/ffffff?text=Photo+1"
-                     alt="Photo professionnelle 1">
-            </div>
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
 
-            <div class="photo-item">
-                <img src="https://via.placeholder.com/300x400/8b5cf6/ffffff?text=Photo+2"
-                     alt="Photo professionnelle 2">
-            </div>
+    <!-- Contenu principal -->
+    <main class="main-content" id="mainContent">
 
-            <div class="photo-item">
-                <img src="https://via.placeholder.com/300x400/ec4899/ffffff?text=Photo+3"
-                     alt="Photo professionnelle 3">
-            </div>
-        </div>
+        <!-- Section Accueil -->
+        <section id="accueil" class="section active-section">
+            <div class="hero-section">
 
-    </div>
-</section>
+                <div class="hero-content">
+                    <h1 class="hero-title">Bienvenue sur mon Portfolio</h1>
+                    <p class="hero-subtitle">Enseignant | Danseur | Passionné</p>
 
-    <!-- Section Qui je suis -->
-<section id="qui-je-suis" class="section">
-    <div class="section-container">
-        <h2 class="section-title">Qui je suis ?</h2>
+                    <!-- Boutons cliquables -->
+                    <div class="hero-buttons" style="margin-top: 20px;">
+                        <a href="#formation-projet" class="cta-button">Découvrir mon parcours</a>
+                        <a href="#faq" class="cta-button" style="margin-left: 15px;">Me contacter</a>
+                    </div>
+                </div>
 
-        <div class="content-card">
-            <p>
-                Étudiant à l’ILEPS et danseur passionné depuis 13 ans, je me consacre à l’enseignement et à la transmission des connaissances aux jeunes. 
-                Mon enfance a été marquée par une vocation pour le travail avec les enfants et l’éducation.
-            </p>
-            <p>
-                Mes passions, ma créativité et mon engagement se reflètent dans mon approche pédagogique et artistique.
-            </p>
-        </div>
-
-        <!-- Photos en dessous du texte -->
-        <div class="photo-gallery" style="margin-top: 20px;">
-            <div class="photo-item">
-                <img src="https://via.placeholder.com/300x400/6366f1/ffffff?text=Photo+1" alt="Photo personnelle 1">
-            </div>
-            <div class="photo-item">
-                <img src="https://via.placeholder.com/300x400/8b5cf6/ffffff?text=Photo+2" alt="Photo personnelle 2">
-            </div>
-        </div>
-
-    </div>
-</section>
-
-    <!-- Formation & Projet professionnel & Action pédagogique -->
-    <section id="formation-pro" class="section">
-        <div class="section-container">
-            <h2 class="section-title">Formation & Projet</h2>
-            <div class="content-card">
-                <ul>
-                    <li>Bac général (spécialité danse, littérature anglaise, SES) – mention Assez Bien (2024)</li>
-                    <li>Étudiant en Sciences de l’Éducation et de la Formation à l’ILEPS (2024)</li>
-                    <li>Brevet des collèges</li>
-                </ul>
-            </div>
-            <div class="content-card">
-                <h3>Projet professionnel</h3>
-                <ul>
-                    <li>Enseignant en école primaire privée</li>
-                    <li>Animateur pour enfants</li>
-                    <li>Enseignant de danse</li>
-                </ul>
-            </div>
-            <div class="content-card">
-                <h3>Action pédagogique</h3>
-                <ul>
-                    <li>Séances de musique et d’APSA en CP/CE1</li>
-                    <li>Sortie pédagogique à l’Axe Majeur</li>
-                    <li>Ateliers d’initiation à la danse hip-hop</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-  <!-- Section Action citoyenne (interne + externe regroupées) -->
-<section id="action-citoyenne" class="section">
-    <div class="section-container">
-        <h2 class="section-title">Action citoyenne</h2>
-
-        <div class="content-card">
-            <p>
-                Bénévolat, scoutisme, ILEPS Awards, Campus Day, Special Olympics, 
-                et autres actions citoyennes. Engagements pour aider la communauté et 
-                accompagner les jeunes.
-            </p>
-        </div>
-
-        <!-- Vidéo intégrée -->
-        <div class="video-container" style="margin-top: 20px; text-align: center;">
-            <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/nlshILo_ghs" 
-                title="Action citoyenne" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        </div>
-    </div>
-</section>
-
-    <!-- Vie de danseur -->
-    <section id="vie-danseur" class="section">
-        <div class="section-container">
-            <h2 class="section-title">Ma vie de danseur</h2>
-
-            <!-- Texte descriptif -->
-            <div class="content-card">
-                <p>
-                    Danseur depuis l’enfance, formé en modern’ jazz puis en hip-hop, contemporain, afro et baroque. 
-                    Expérience auprès de grands chorégraphes comme Olivier Dubois et Hervé Robbes. 
-                    Je partage ici mes performances et mes moments de danse.
+                <!-- Petit texte au-dessus des photos -->
+                <p style="text-align:center; font-size:18px; margin-bottom:15px;">
+                    Futur enseignant, je fais bouger les jeunes avec passion et joie
                 </p>
-            </div>
 
-            <!-- Galerie photos -->
-            <div class="photo-gallery">
-                <div class="photo-item">
-                    <img src="https://via.placeholder.com/300x400/6366f1/ffffff?text=Danse+1" alt="Danse 1">
+                <!-- Galerie photos -->
+                <div class="photo-gallery">
+                    <div class="photo-item">
+                        <img src="https://via.placeholder.com/300x400/6366f1/ffffff?text=Photo+1"
+                             alt="Photo professionnelle 1">
+                    </div>
+
+                    <div class="photo-item">
+                        <img src="https://via.placeholder.com/300x400/8b5cf6/ffffff?text=Photo+2"
+                             alt="Photo professionnelle 2">
+                    </div>
+
+                    <div class="photo-item">
+                        <img src="https://via.placeholder.com/300x400/ec4899/ffffff?text=Photo+3"
+                             alt="Photo professionnelle 3">
+                    </div>
                 </div>
-                <div class="photo-item">
-                    <img src="https://via.placeholder.com/300x400/8b5cf6/ffffff?text=Danse+2" alt="Danse 2">
-                </div>
-                <div class="photo-item">
-                    <img src="https://via.placeholder.com/300x400/ec4899/ffffff?text=Danse+3" alt="Danse 3">
-                </div>
+
             </div>
+        </section>
 
-            <!-- Vidéo intégrée YouTube -->
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/nDCQ1Sx8UxQ" 
-                        title="Ma performance de danse" frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-    </section>
+        <!-- Section Qui je suis -->
+        <section id="qui-je-suis" class="section">
+            <div class="section-container">
 
-    <!-- Section FAQ -->
-<section id="faq" class="section">
-    <div class="section-container">
-        <h2 class="section-title">Foire aux Questions & Contact</h2>
+                <h2 class="section-title">Qui je suis ?</h2>
 
-        <div class="faq-container">
-
-            <div class="faq-item">
-                <button class="faq-question">
-                    Question 1 : Comment me contacter ?
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>Vous pouvez utiliser le formulaire ci-dessous pour me contacter directement.</p>
+                <div class="content-card">
+                    <p>
+                        Étudiant à l’ILEPS et danseur passionné depuis 13 ans, je me consacre à l’enseignement
+                        et à la transmission des connaissances aux jeunes.
+                        Mon enfance a été marquée par une vocation pour le travail avec les enfants et l’éducation.
+                    </p>
+                    <p>
+                        Mes passions, ma créativité et mon engagement se reflètent dans mon approche pédagogique
+                        et artistique.
+                    </p>
                 </div>
-            </div>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    Question 2 : Quels sont mes domaines d'expertise ?
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>Mes domaines d'expertise incluent l'enseignement et la danse.</p>
+                <!-- Photos en dessous du texte -->
+                <div class="photo-gallery" style="margin-top: 20px;">
+                    <div class="photo-item">
+                        <img src="https://via.placeholder.com/300x400/6366f1/ffffff?text=Photo+1"
+                             alt="Photo personnelle 1">
+                    </div>
+
+                    <div class="photo-item">
+                        <img src="https://via.placeholder.com/300x400/8b5cf6/ffffff?text=Photo+2"
+                             alt="Photo personnelle 2">
+                    </div>
                 </div>
-            </div>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    Question 3 : Proposez-vous des cours particuliers ?
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>Contactez-moi pour discuter des possibilités de cours particuliers.</p>
+            </div>
+        </section>
+
+        <!-- Formation & Projet -->
+        <section id="formation-pro" class="section">
+            <div class="section-container">
+
+                <h2 class="section-title">Formation & Projet</h2>
+
+                <div class="content-card">
+                    <ul>
+                        <li>Bac général (spécialité danse, littérature anglaise, SES) – mention Assez Bien (2024)</li>
+                        <li>Étudiant en Sciences de l’Éducation et de la Formation à l’ILEPS (2024)</li>
+                        <li>Brevet des collèges</li>
+                    </ul>
                 </div>
+
+                <div class="content-card">
+                    <h3>Projet professionnel</h3>
+                    <ul>
+                        <li>Enseignant en école primaire privée</li>
+                        <li>Animateur pour enfants</li>
+                        <li>Enseignant de danse</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>Action pédagogique</h3>
+                    <ul>
+                        <li>Séances de musique et d’APSA en CP/CE1</li>
+                        <li>Sortie pédagogique à l’Axe Majeur</li>
+                        <li>Ateliers d’initiation à la danse hip-hop</li>
+                    </ul>
+                </div>
+
             </div>
+        </section>
 
-        </div>
+        <!-- Section Action citoyenne -->
+        <section id="action-citoyenne" class="section">
+            <div class="section-container">
 
-        <!-- Formulaire de contact -->
-        <div class="contact-form" style="margin-top:40px; max-width:600px; margin-left:auto; margin-right:auto;">
-            <h3>Me contacter directement</h3>
-            <form action="mailto:Lucas95.corral@gmail.com" method="POST" enctype="text/plain">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required style="width:100%; padding:10px; margin-bottom:10px;">
+                <h2 class="section-title">Action citoyenne</h2>
 
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required style="width:100%; padding:10px; margin-bottom:10px;">
+                <div class="content-card">
+                    <p>
+                        Bénévolat, scoutisme, ILEPS Awards, Campus Day, Special Olympics,
+                        et autres actions citoyennes. Engagements pour aider la communauté
+                        et accompagner les jeunes.
+                    </p>
+                </div>
 
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="5" required style="width:100%; padding:10px; margin-bottom:15px;"></textarea>
+                <!-- Vidéo -->
+                <div class="video-container" style="margin-top: 20px; text-align: center;">
+                    <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/nlshILo_ghs"
+                            title="Action citoyenne" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </div>
 
-                <button type="submit" style="padding:15px 30px; background:var(--primary-color); color:white; border:none; border-radius:50px; cursor:pointer;">
-                    Envoyer
-                </button>
-            </form>
-        </div>
-    </div>
-</section>
+            </div>
+        </section>
 
-<!-- Footer -->
-<footer class="footer">
-    <p>&copy; 2025 - Lucas Corral - Tous droits réservés</p>
-</footer>
+        <!-- Vie de danseur -->
+        <section id="vie-danseur" class="section">
+            <div class="section-container">
 
-<script src="script.js"></script>
+                <h2 class="section-title">Ma vie de danseur</h2>
+
+                <div class="content-card">
+                    <p>
+                        Depuis tout petit, je suis formé à la danse modern' Jazz. À mon entrée au lycée, j'ai intégré d'abord en seconde l'option danse.
+                        Pendant cette année, j'ai découvert plusieurs façons de me connecter à moi et aux autres.
+                        J'ai rencontré des danseurs et chorégraphes connus, et j'ai également assisté à des spectacles de danse célèbres comme "Political Mother Unplugged" de Hofesh Shechter.
+                    </p>
+                    <p>
+                        Ensuite, la classe de Première m'a permis d'intégrer l'option de Spécialité Danse,
+                        où j'ai rencontré de grands chorégraphes comme Olivier Dubois, Hervé Robbes, Mehdi Kerkouche, la compagnie MazelFreten, etc.
+                        J'ai également assisté à des spectacles très connus et populaires, comme "Tragédie New Edit" de Olivier Dubois, "BLKDOG" de Botis Seva ou encore "So Schnell" de Dominique Bagouet.
+                    </p>
+                    <p>
+                        Cette approche de la danse m'a permis de m'ancrer dans mes connaissances et dans ma position d'orateur.
+                        De plus, l'observation et le visionnage de plus de 64 spectacles m'ont permis de développer mon approche critique de la danse et du monde qui m'entoure.
+                    </p>
+                </div>
+
+                <!-- Galerie photos -->
+                <div class="photo-gallery">
+                    <div class="photo-item">
+                        <img src="https://via.placeholder.com/300x400/6366f1/ffffff?text=Danse+1" alt="Danse 1">
+                    </div>
+                    <div class="photo-item">
+                        <img src="https://via.placeholder.com/300x400/8b5cf6/ffffff?text=Danse+2" alt="Danse 2">
+                    </div>
+                    <div class="photo-item">
+                        <img src="https://via.placeholder.com/300x400/ec4899/ffffff?text=Danse+3" alt="Danse 3">
+                    </div>
+                </div>
+
+                <!-- Vidéo -->
+                <div class="video-container">
+                    <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/nDCQ1Sx8UxQ"
+                            title="Ma performance de danse" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section FAQ -->
+        <section id="faq" class="section">
+            <div class="section-container">
+
+                <h2 class="section-title">Foire aux Questions & Contact</h2>
+
+                <div class="faq-container">
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Question 1 : Comment me contacter ?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Vous pouvez utiliser le formulaire ci-dessous pour me contacter directement.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Question 2 : Quels sont mes domaines d'expertise ?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Mes domaines d'expertise incluent l'enseignement et la danse.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Question 3 : Proposez-vous des cours particuliers ?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Contactez-moi pour discuter des possibilités de cours particuliers.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Formulaire de contact -->
+                <div class="contact-form" style="margin-top:40px; max-width:600px; margin-left:auto; margin-right:auto;">
+                    <h3>Me contacter directement</h3>
+
+                    <form action="mailto:Lucas95.corral@gmail.com" method="POST" enctype="text/plain">
+
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" required
+                               style="width:100%; padding:10px; margin-bottom:10px;">
+
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required
+                               style="width:100%; padding:10px; margin-bottom:10px;">
+
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="5" required
+                                  style="width:100%; padding:10px; margin-bottom:15px;"></textarea>
+
+                        <button type="submit"
+                                style="padding:15px 30px; background:var(--primary-color); color:white;
+                                       border:none; border-radius:50px; cursor:pointer;">
+                            Envoyer
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 - Lucas Corral - Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
