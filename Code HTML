@@ -64,17 +64,17 @@
                 <!-- Galerie photos -->
                 <div class="photo-gallery">
                     <div class="photo-item">
-                        <img src="images/Photo pro 1.jpg"
+                        <img src="Photo pro 1.jpg"
                              alt="Photo professionnelle 1" />
                     </div>
 
                     <div class="photo-item">
-                        <img src="images/Photo pro 2.jpg"
+                        <img src="Photo pro 2.jpg"
                              alt="Photo professionnelle 2" />
                     </div>
 
                     <div class="photo-item">
-                        <img src="images/Photo pro 3.jpg"
+                        <img src="Photo pro 3.jpg"
                              alt="Photo professionnelle 3" />
                     </div>
                 </div>
@@ -103,12 +103,12 @@
                 <!-- Photos en dessous du texte -->
                 <div class="photo-gallery" style="margin-top: 20px;">
                     <div class="photo-item">
-                        <img src="image/Moi 1.webp"
+                        <img src="Moi 1.webp"
                              alt="Photo personnelle 1">
                     </div>
 
                     <div class="photo-item">
-                        <img src="images/Moi 2.jpg"
+                        <img src="Moi 2.jpg"
                              alt="Photo personnelle 2">
                     </div>
                 </div>
@@ -204,13 +204,13 @@
                 <!-- Galerie photos -->
                 <div class="photo-gallery">
                     <div class="photo-item">
-                        <img src="Images/Danse 1.jpg" />
+                        <img src="Danse 1.jpg" />
                     </div>
                     <div class="photo-item">
-                        <img src="Images/Danse 2.jpg" />
+                        <img src="Danse 2.jpg" />
                     </div>
                     <div class="photo-item">
-                        <img src="Images/Danse 3.jpg" />
+                        <img src="Danse 3.jpg" />
                     </div>
                 </div>
 
