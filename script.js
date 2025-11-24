@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 // Gestion du menu hamburger
 const menuToggle = document.getElementById('menuToggle');
 const sidebar = document.getElementById('sidebar');
@@ -73,5 +75,7 @@ faqQuestions.forEach(question => {
         answer.classList.toggle('show');
         question.querySelector('i').classList.toggle('fa-chevron-down');
         question.querySelector('i').classList.toggle('fa-chevron-up');
+        });
     });
+
 });
